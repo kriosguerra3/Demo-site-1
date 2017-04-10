@@ -1,0 +1,90 @@
+<div class="no-gutter">
+	<div class="col">
+		<div class="image_cover">
+			<h1>Contact Us!</h1>
+		</div>
+	</div>		
+	<div class="contact_content">
+		<div class="no-gutter">
+			<div  id="contact_left_col" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<h4>Address</h4>
+					<p>99 Neverland St, St Junipero, CA, 90210</p>
+				<h4>Phone</h4>
+					<p>001-123-456-7890</p>
+					<p>001-1800-123-4567</p>
+				<h4>Email</h4>
+					<p>hello@kellyrios.com</p>
+				
+				<div class="contact_icons">
+					<a class= "" href="#" >
+					<span class="icon-facebook text-icons-contact"></span>
+					</a>
+					<a class= "" href="#" >
+						<span class="icon-pinterest2 text-icons-contact"></span>
+					</a>
+					<a class= "" href="#" >
+						<span class="icon-twitter text-icons-contact"></span>
+					</a>
+				</div>
+				
+				<div class="contact_icons">
+					<a class= "" href="#" >
+						<span class="icon-vine text-icons-contact"></span>
+					</a>
+					<a class= "" href="#" >
+						<span class="icon-youtube text-icons-contact"></span>
+					</a>
+					<a class= "" href="#" >
+						<span class="icon-linkedin2 text-icons-contact"></span>
+					</a>
+				</div>
+				<div class="contact_icons">
+					<a class= "" href="#" >
+						<span class="icon-instagram text-icons-contact"></span>
+					</a>
+				</div>
+			</div>
+			<div id="contact_right_col" class="col-xs-12 col-sm-8 col-md-8 col-lg-8" >
+				
+				<h3>Get in Touch</h3>
+				<p>We are eagerly waiting to talk to you. Get in touch with us if you have any queries and we will get back to you as soon as possible.</p>
+
+				<form action="#" id="contact_form">
+					<input type="text" name="" id="name" placeholder="Name">
+					<input type="text" name="" id="email" placeholder="Email">
+					<input type="text"name="" id="subject" placeholder="Subject">
+					<textarea name="message" id="message" rows="10" placeholder="Message"></textarea>
+					<input type="submit" id="form_submit">						
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script>	
+	$(function() {
+			//Script for scrollable div
+			var offsetPixels = $(".sidebarBox").outerHeight() + 10;
+			//If scrolling
+			$(window).scroll(function() {
+				//if width > 992, the box scrolls as you move
+				if($(window).width() > 992){
+					if ($(window).scrollTop() > offsetPixels) {
+						$( ".scrollingBox" ).css({
+							"position": "fixed",
+							"top": "15px"
+						});
+					} else {
+						$( ".scrollingBox" ).css({
+							"position": "static"
+						});
+					}
+				}else{
+					//if width < 992, the box keeps at the bottom static
+					$( ".scrollingBox" ).css({
+						"display":"block",
+						"position": ""
+					});
+				}
+			});
+});
+</script>

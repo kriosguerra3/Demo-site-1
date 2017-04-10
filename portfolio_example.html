@@ -1,0 +1,90 @@
+<div class="row">
+	<div class= "portfolio_example_title" class="col-xs-12 col-sm-12 col-md-9 col-lg-9">		
+		<div id = "portfolio_top_info" class="project_controls_container">
+			<div class="project_controls">
+				<div class="control_container">
+					<a class= "a_prev portfolio" href="#" title="Previous Project">
+						<span class="icon-arrow-left text-icons"></span>	
+					</a>
+				</div>
+				<div class="control_container">
+					<a href="index.html" class = "portfolio" title="All Projects">
+						<span class="icon-list2 text-icons"></span>
+					</a>
+				</div>
+				<div class="control_container">
+					<a class="a_next portfolio" href="#">
+						<span class="icon-arrow-right text-icons"></span>
+					</a>
+				</div>					
+			</div>
+		</div>	
+		<h3 id= "example_title_top">A Big Heading Text</h3>	
+		<p id= "example_text_top"></p>
+	</div>	
+		
+
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+		<div id="dynamic-container">			
+		</div>		
+	</div>		
+	<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+		<div class="sidebarBox">
+			<div class="scrollingBox">
+				<h3 id= "example_title">A Big Heading Text</h3>
+				<p id= "example_text"></p>
+				<h4> Client </h4>
+				<span id="example_client"></span>
+				<h4> Date </h4>
+				<span id="example_date"></span>
+				<div class="project_controls_container">
+					<div class="project_controls">
+						<div class="control_container">
+							<a class= "a_prev" href="#" class = "portfolio" title="Previous Project">
+	    						<span class="icon-arrow-left text-icons"></span>	
+							</a>
+						</div>
+						<div class="control_container">
+							<a href="index.html" class = "portfolio" title="All Projects">
+	    						<span class="icon-list2 text-icons"></span>
+							</a>
+						</div>
+						<div class="control_container">
+							<a class="a_next" href="#" class = "portfolio">
+	    						<span class="icon-arrow-right text-icons"></span>
+							</a>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+<script>	
+	$(function() {
+			//Script for scrollable div
+			var offsetPixels = $(".sidebarBox").outerHeight() + 10;
+			//If scrolling
+			$(window).scroll(function() {
+				//if width > 992, the box scrolls as you move
+				if($(window).width() > 992){
+					if ($(window).scrollTop() > offsetPixels) {
+						$( ".scrollingBox" ).css({
+							"position": "fixed",
+							"top": "15px"
+						});
+					} else {
+						$( ".scrollingBox" ).css({
+							"position": "static"
+						});
+					}
+				}else{
+					//if width < 992, the box keeps at the bottom static
+					$( ".scrollingBox" ).css({
+						"display":"block",
+						"position": ""
+					});
+				}
+			});
+});
+</script>

@@ -1,0 +1,19 @@
+{	
+	"indexes":["cameras","trains","desks","trains","cameras","desks","desks"],
+	"photos":{
+		"trains":["train_station.jpg","train-station-690393_640.jpg","locomotive-60539_640.jpg","mesh-1363771_640.jpg"],
+		"cameras":["lens-190972_640.jpg", "camera-1362419_640.jpg","lens-637558_640.jpg"],  
+		"desks":["desk_1.jpg","desk_2.jpg","office-730681_640.jpg","technology-792180_640.jpg"]    
+	},
+	"texts":{
+		"trains":{"title":"Trains Gallery","text":"These are stunning trains and platforms, aren't they?","client":"Fictional Client # 1","date" : "October, 2014"},
+		"cameras":{"title":"Cameras Gallery","text":"A fine collection of vintage and modern cameras","client":"Fictional Client # 2", "date" : "November, 2015" },  
+		"desks":{"title":"Desks Gallery","text":"A group of modern desks with trendy stationery","client":"Fictional Client # 3" , "date" : "October, 2016"}    
+	}
+}
+
+
+
+
+
+
